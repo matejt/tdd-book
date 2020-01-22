@@ -1,0 +1,6 @@
+db.sqllite3 
+geckodriver.log 
+virtualenv 
+*.pvc 
+.idea 
+superlists/__pycache__ 
