@@ -4,3 +4,5 @@ virtualenv
 *.pvc 
 .idea 
 superlists/__pycache__ 
+firefox.log 
+__pycache__ 
