@@ -1,4 +1,3 @@
-db.sqllite3 
 geckodriver.log 
 virtualenv 
 *.pvc 
@@ -6,3 +5,4 @@ virtualenv
 superlists/__pycache__ 
 firefox.log 
 __pycache__ 
+db.sqlite3 
