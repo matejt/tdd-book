@@ -1,8 +1,7 @@
-geckodriver.log 
-virtualenv 
-*.pvc 
+db.sqlite3
+geckodriver.log
+virtualenv
+__pycache__
+*.pyc
 .idea 
-superlists/__pycache__ 
 firefox.log 
-__pycache__ 
-db.sqlite3 
