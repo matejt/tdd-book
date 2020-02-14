@@ -1,0 +1,15 @@
+[Unitj]
+Description=Gunicorn server for DOMAIN 
+
+[Service]
+Restart=on-failure
+User=vdev2
+WorkingDirectory=/home/vdev2/sites/DOMAIN
+EnvironmentFile=/home/vdev2/sites/DOMAIN/.env
+
+ExecStart=/home/vdev2/sites/DOMAIN/venv/bin/gunicorn --bind unix:/tmp/DOMAIN.socket superlists.wsgi:application
+
+[Installj]
+WantedBy=multi-user.target
+
+
