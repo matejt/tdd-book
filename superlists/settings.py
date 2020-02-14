@@ -24,7 +24,7 @@ if 'DJANGO_DEBUG_FALSE' in os.environ:
     DEBUG = False
     SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
     # ALLOWED_HOSTS = [os.environ['SITENAME']]
-    ALLOWED_HOSTS = ['56.76.62.147:8080']
+    ALLOWED_HOSTS = ['*']
 else:
     DEBUG = True
     SECRET_KEY = 'insecure-secret-key'

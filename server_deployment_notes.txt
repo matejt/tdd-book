@@ -1,0 +1,17 @@
+Base Operating System - Ubuntu 16.04
+User = "vdev2"
+
+server url:
+http://56.76.62.147:8080
+
+run application with gunicorn:
+gunicorn --bind unix:/tmp/superlists-staging.matejtacer.com.socket superlists.wsgi:application
+
+run functional tests against the staging server (from git-bash):
+STAGING_SERVER=56.76.62.147:8080 ./manage.py test functional_tests
+
+edit nginx configuration:
+sudo vim /etc/nginx/sites-available/superlists-staging.matejtacer.com
+
+restart nginx server:
+sudo systemctl reload nginx
