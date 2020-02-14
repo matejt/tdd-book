@@ -15,3 +15,12 @@ sudo vim /etc/nginx/sites-available/superlists-staging.matejtacer.com
 
 restart nginx server:
 sudo systemctl reload nginx
+
+generate secret key
+echo DJANGO_SECRET_KEY=$(python -c "import random; print(''.join(random.SystemRandom().choices('abcdefghijklmnopqrstuvwxyz0123456789', k=50)))") >> .env
+
+set system variables from file:
+set -a; source filename set +a
+
+server init script:
+sudo vim /etc/systemd/system/gunicorn-superlists-staging.matejtacer.com.service
